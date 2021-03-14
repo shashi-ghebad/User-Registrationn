@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>UC2_ValidLastName</RootNamespace>
+    <RootNamespace>UC3_ValidEmail</RootNamespace>
   </PropertyGroup>
 
 </Project>
