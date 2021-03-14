@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>UC6_PassRule2</RootNamespace>
+    <RootNamespace>UC7_PassRule3</RootNamespace>
   </PropertyGroup>
 
 </Project>

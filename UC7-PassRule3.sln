@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC5-PassRule1", "UC5-PassRule1\UC5-PassRule1.csproj", "{2F8A38B7-028A-43E5-8549-D8E01FD423C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC7-PassRule3", "UC7-PassRule3\UC7-PassRule3.csproj", "{21499311-A3C0-4CC1-877A-D31A778B4D7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F8A38B7-028A-43E5-8549-D8E01FD423C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F8A38B7-028A-43E5-8549-D8E01FD423C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F8A38B7-028A-43E5-8549-D8E01FD423C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F8A38B7-028A-43E5-8549-D8E01FD423C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21499311-A3C0-4CC1-877A-D31A778B4D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21499311-A3C0-4CC1-877A-D31A778B4D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21499311-A3C0-4CC1-877A-D31A778B4D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21499311-A3C0-4CC1-877A-D31A778B4D7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C3A2D3ED-9C84-4224-8E93-F13B327EB11A}
+		SolutionGuid = {C0CDF8C7-3EA2-425E-A81C-CAB47275ABA3}
 	EndGlobalSection
 EndGlobal
