@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace UC4_MobileNumber
+namespace UC6_PassRule2
 {
     class Program
     {
@@ -13,6 +13,7 @@ namespace UC4_MobileNumber
         public static string lastName;
         public static string email;
         public static string mobileNumber;
+        public static string password;
 
         public static bool UserName(string userName)
         {
@@ -34,6 +35,11 @@ namespace UC4_MobileNumber
             return Regex.IsMatch(mobileNumber, @"^[0-9]{2}[ ][0-9]{10}$");
         }
 
+        public static bool Password(string password)
+        {
+            return Regex.IsMatch(password, @"^(?=.*[A-Z])[A-Za-z0-9]{8,}$");
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a Valid User Name: ");
@@ -51,6 +57,10 @@ namespace UC4_MobileNumber
             Console.WriteLine("Enter a Valid Mobile Number: ");
             mobileNumber = Console.ReadLine();
             Console.WriteLine(MobileNumber(mobileNumber) + "\n");
+
+            Console.WriteLine("Enter a Valid Password: ");
+            password = Console.ReadLine();
+            Console.WriteLine(Password(password) + "\n");
 
             Console.ReadKey();
         }
