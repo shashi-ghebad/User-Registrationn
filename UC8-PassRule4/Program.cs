@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace UC7_PassRule3
+
+namespace UC8_PassRule4
 {
     class Program
     {
@@ -37,7 +38,7 @@ namespace UC7_PassRule3
 
         public static bool Password(string password)
         {
-            return Regex.IsMatch(password, @"^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$");
+            return Regex.IsMatch(password, @"^(?=.*[A-Z])(?=.*[0-9])(?=[^.#+*/$@!%^&_-]*[.#+*/$@!%^&_-][^.#+*/$@!%^&_-]*$)[A-Za-z0-9.#+*/$@!%^&_-]{8,}$");
         }
 
         static void Main(string[] args)
