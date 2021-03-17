@@ -2,7 +2,7 @@ using System;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MSTest
+namespace UnitTestProject2
 {
     [TestClass]
     public class UnitTest2
