@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UC6-PassRule2\UC6-PassRule2.csproj" />
+    <ProjectReference Include="..\UC7-PassRule3\UC7-PassRule3.csproj" />
   </ItemGroup>
 
 </Project>
