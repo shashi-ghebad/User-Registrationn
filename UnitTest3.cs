@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MSTest
 {
     [TestClass]
-    public class UnitTest2
+    public class UnitTest3
     {
         [TestMethod]
         public void GivenFirstName_WhenValidated_ThenReturnsTrue()
@@ -30,6 +30,17 @@ namespace MSTest
         }
 
         private bool LastName(string lastName)
+        {
+            throw new NotImplementedException();
+        }
+        [TestMethod]
+        public void GivenEmail_WhenValidated_ThenReturnsTrue()
+        {
+            string email = "Shashighebad@gmail.com";
+            bool result = Email(email);
+            Assert.AreEqual(true, result);
+        }
+        private bool Email(string email)
         {
             throw new NotImplementedException();
         }

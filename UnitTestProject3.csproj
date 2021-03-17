@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UC2-ValidLastName\UC2-ValidLastName.csproj" />
+    <ProjectReference Include="..\UC3-ValidEmail\UC3-ValidEmail.csproj" />
   </ItemGroup>
 
 </Project>
