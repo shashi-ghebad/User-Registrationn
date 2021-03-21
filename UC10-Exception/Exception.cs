@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC12-Exception
+namespace UC12Exception
 {
     class UCException : Exception
     {
