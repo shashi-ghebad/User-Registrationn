@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RegexUsinglambda
+namespace UC12-Exception
 {
     class UCException : Exception
     {
