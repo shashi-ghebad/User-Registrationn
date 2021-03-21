@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 
-namespace RegexUsinglambda
+namespace UC12_Exception
 {
     class Program
     {
@@ -16,15 +16,84 @@ namespace RegexUsinglambda
         public static string mobileNumber;
         public static string password;
 
-        public static bool UserName(string userName) => Regex.IsMatch(userName, @"^[A-Z]{1}[a-z0-9A-Z]{2,}$");
+        public static bool UserName(string userName)
+        {
+            try
+            {
+                if (Regex.IsMatch(userName, @"^[A-Z]{1}[a-z0-9A-Z]{2,}$"))
+                    return true;
+                else
+                    throw new UCException(UCException.ExceptionTypes.Invalid_UserName, "Wrong username entered");
+            }
+            catch (UCException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+        public static bool LastName(string lastName)
+        {
+            try
+            {
+                if (Regex.IsMatch(lastName, @"^[A-Z]{1}[a-z0-9A-Z]{2,}$"))
+                    return true;
+                else
+                    throw new UCException(UCException.ExceptionTypes.Invalid_lastName, "Wrong lastname entered");
+            }
+            catch (UCException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
 
-        public static bool LastName(string lastName) => (Regex.IsMatch(lastName, @"^[A-Z]{1}[a-z0-9A-Z]{2,}$"));
+        public static bool Email(string email)
+        {
+            try
+            {
+                if (Regex.IsMatch(email, @"^[A-Z0-9a-z]+([.#_+-][A-Z0-9a-z]+)*[@][A-Z0-9a-z]+([.][A-Za-z]{2,3}){0,2}$"))
+                    return true;
+                else
+                    throw new UCException(UCException.ExceptionTypes.Invalid_Email, "Wrong email entered");
+            }
+            catch (UCException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
 
-        public static bool Email(string email) => (Regex.IsMatch(email, @"^[A-Z0-9a-z]+([.#_+-][A-Z0-9a-z]+)*[@][A-Z0-9a-z]+([.][A-Za-z]{2,3}){1,2}$"));
+        public static bool MobileNumber(string mobileNumber)
+        {
+            try
+            {
+                if (Regex.IsMatch(mobileNumber, @"^[0-9]{2}[ ][0-9]{10}$"))
+                    return true;
+                else
+                    throw new UCException(UCException.ExceptionTypes.Invalid_MobileNumber, "Wrong MobileNumber entered");
+            }
+            catch (UCException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
 
-        public static bool MobileNumber(string mobileNumber) => (Regex.IsMatch(mobileNumber, @"^[0-9]{2}[ ][0-9]{10}$"));
-
-        public static bool Password(string password) => (Regex.IsMatch(password, @"^(?=.*[A-Z])(?=.*[0-9])(?=[^.#+*/$@!%^&_-]*[.#+*/$@!%^&_-][^.#+*/$@!%^&_-]*$)[A-Za-z0-9.#+*/$@!%^&_-]{8,}$"));
+        public static bool Password(string password)
+        {
+            try
+            {
+                if (Regex.IsMatch(password, @"^(?=.*[A-Z])(?=.*[0-9])(?=[^.#+*/$@!%^&_-]*[.#+*/$@!%^&_-][^.#+*/$@!%^&_-]*$)[A-Za-z0-9.#+*/$@!%^&_-]{8,}$"))
+                    return true;
+                else
+                    throw new UCException(UCException.ExceptionTypes.Invalid_Password, "Wrong Password entered");
+            }
+            catch (UCException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
 
         static void Main(string[] args)
         {
